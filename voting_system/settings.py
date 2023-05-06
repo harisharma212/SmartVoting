@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'voting',
     'crispy_forms',
+    # Comment below for MAC OS
+    'crispy_bootstrap5',
     'localflavor',
     'users',
 ]
@@ -119,7 +121,12 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-CRISPY_TEMPLATE_PACK = "bootstrap4"
+# uNCOMMENT BELOW FOR MACOS
+# CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+# Comment below for MAC OS
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'

@@ -65,7 +65,6 @@ def contact_us(request):
 
 
 def vote(request, candidate_id, voting_session_id):
-    import pdb;pdb.set_trace()
     user = request.user.username
     can_vote = face_recog(settings.MEDIA_ROOT + '/webcamimages/' + user + '.jpg',
                           request.user.profile.image.url[1:len(request.user.profile.image.url)])
@@ -99,7 +98,6 @@ def generate_statistics_and_context(voting_session):
 
 
 def face_recog(webcam_photo, user_photo):
-    import pdb;pdb.set_trace()
     import face_recognition
 
     picture_of_me = face_recognition.load_image_file(user_photo)
