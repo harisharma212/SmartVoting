@@ -7,21 +7,23 @@ Initial Steps:
 	(Select Add Python to Path checkbox)
   
 3. Install Microsoft VS CPP tools(For Windows only ) => https://visualstudio.microsoft.com/visual-cpp-build-tools/
-	
-3. Install any IDE (Preferably Sublime Text) (Optional) (https://www.sublimetext.com/3)
 
-4. Install virtual environment library.
+4. Install Tesseract => https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-5.3.1.20230401.exe
+	
+5. Install any IDE (Preferably Sublime Text) (Optional) (https://www.sublimetext.com/3)
+
+6. Install virtual environment library.
 	("pip install virtualenv") 
 
-5. Create Virtual Environment.
+7. Create Virtual Environment.
 	* Open CMD
 	* Type D:
 	* type ("virtualenv <ENV_NAME>")
 
-6. Activate virtual environment
+8. Activate virtual environment
 	(<ENV_NAME>\Scripts\activate)
 
-7. Run below commandd to install required libraries.
+9. Run below commandd to install required libraries.
 	"pip install -r requirements.txt"
 
 Running the server:
